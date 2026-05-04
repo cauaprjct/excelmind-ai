@@ -1,0 +1,61 @@
+# ---- Core ----
+python-dateutil>=2.8.2
+
+# ---- Data Engine ----
+polars>=1.2.0
+pyarrow>=15.0.0
+
+# ---- Spreadsheet I/O ----
+openpyxl>=3.1.5
+xlsxwriter>=3.1.9
+xlrd>=2.0.1
+
+# ---- Web Interface ----
+streamlit>=1.37.0
+streamlit-plotly-events>=0.0.6
+
+# ---- Visualization ----
+plotly>=5.22.0
+kaleido>=0.2.1
+
+# ---- AI / LangChain / LangGraph ----
+langchain>=0.2.0
+langchain-community>=0.2.0
+langchain-openai>=0.1.0
+langchain-google-genai>=1.0.0
+langchain-anthropic>=0.1.0
+langgraph>=0.2.0
+
+# ---- LLM Providers ----
+google-generativeai>=0.7.0
+openai>=1.35.0
+anthropic>=0.28.0
+
+# ---- Config & Validation ----
+pydantic>=2.7.0
+pydantic-settings>=2.3.0
+python-dotenv>=1.0.1
+
+# ---- Reporting & Templates ----
+jinja2>=3.1.4
+markdown>=3.6
+fpdf2>=2.8.0
+
+# ---- Dev & Testing ----
+pytest>=8.2.0
+pytest-cov>=5.0.0
+black>=24.4.0
+ruff>=0.4.0
+mypy>=1.10.0
+
+# ---- CLI ----
+typer>=0.12.0
+rich>=13.7.0
+
+# ---- Advanced Analytics ----
+statsmodels>=0.14.0
+
+# ---- Utilities ----
+tqdm>=4.66.0
+tenacity>=8.3.0
+cachetools>=5.3.0

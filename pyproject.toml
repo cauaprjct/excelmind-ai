@@ -1,0 +1,115 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "excelmind-ai"
+version = "0.2.0"
+description = "Ferramenta inteligente de analise de planilhas Excel/CSV com IA - Analise automatica, graficos interativos e chat em portugues"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [
+    {name = "ExcelMind AI Contributors"}
+]
+maintainers = [
+    {name = "ExcelMind AI Contributors"}
+]
+keywords = [
+    "spreadsheet", "excel", "csv", "data-analysis", "ai", 
+    "streamlit", "polars", "langgraph", "analytics", "visualization",
+    "business-intelligence", "data-science", "portuguese"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Financial and Insurance Industry",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: Portuguese (Brazilian)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Office/Business :: Financial :: Spreadsheet",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Scientific/Engineering :: Visualization",
+]
+
+dependencies = [
+    "python-dateutil>=2.8.2",
+    "polars>=1.2.0",
+    "pyarrow>=15.0.0",
+    "openpyxl>=3.1.5",
+    "xlsxwriter>=3.1.9",
+    "xlrd>=2.0.1",
+    "streamlit>=1.37.0",
+    "streamlit-plotly-events>=0.0.6",
+    "plotly>=5.22.0",
+    "kaleido>=0.2.1",
+    "langchain>=0.2.0",
+    "langchain-community>=0.2.0",
+    "langchain-openai>=0.1.0",
+    "langchain-google-genai>=1.0.0",
+    "langchain-anthropic>=0.1.0",
+    "langgraph>=0.2.0",
+    "google-generativeai>=0.7.0",
+    "openai>=1.35.0",
+    "anthropic>=0.28.0",
+    "pydantic>=2.7.0",
+    "pydantic-settings>=2.3.0",
+    "python-dotenv>=1.0.1",
+    "jinja2>=3.1.4",
+    "markdown>=3.6",
+    "tqdm>=4.66.0",
+    "tenacity>=8.3.0",
+    "cachetools>=5.3.0",
+    "typer>=0.12.0",
+    "rich>=13.7.0",
+    "fpdf2>=2.8.0",
+    "statsmodels>=0.14.0",
+]
+
+[project.scripts]
+excelmind = "excelmind_ai.cli:main"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.2.0",
+    "pytest-cov>=5.0.0",
+    "black>=24.4.0",
+    "ruff>=0.4.0",
+    "mypy>=1.10.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/cauaprjct/excelmind-ai"
+Repository = "https://github.com/cauaprjct/excelmind-ai"
+Documentation = "https://github.com/cauaprjct/excelmind-ai#readme"
+Issues = "https://github.com/cauaprjct/excelmind-ai/issues"
+Changelog = "https://github.com/cauaprjct/excelmind-ai/releases"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-dir]
+"" = "src"
+
+[tool.black]
+line-length = 100
+target-version = ['py311']
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
