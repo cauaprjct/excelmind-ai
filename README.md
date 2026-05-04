@@ -137,6 +137,113 @@ excelmind info
 
 ---
 
+## Arquivo de Exemplo
+
+O projeto inclui um arquivo de exemplo para voce testar:
+
+```
+examples/sample_data/vendas.csv
+```
+
+Este arquivo contem dados de vendas ficticio com:
+- 108 registros de vendas
+- Colunas: Data, Produto, Categoria, Vendedor, Regiao, Quantidade, Preco, Receita, Custo, Lucro, Avaliacao
+
+---
+
+## Funcionalidades Principais
+
+| Funcionalidade | Descricao |
+|----------------|----------|
+| Upload Inteligente | Carrega Excel/CSV com deteccao automatica de abas |
+| Analise Automatica | KPIs, tendencias, anomalias e correlacoes |
+| Graficos Interativos | Barras, linhas, pizza, dispersao, heatmap |
+| Chat com IA | Pergunte sobre seus dados em portugues |
+| Previsao Temporal | Previsao de series temporais (ARIMA) |
+| Relatorios | Excel formatado e PDF profissional |
+
+---
+
+## Perguntas Frequentes
+
+### O chat com IA nao funciona, o que fazer?
+
+Verifique se:
+1. Voce criou o arquivo `.env` com a chave de API
+2. A chave esta correta (sem espacos extras)
+3. O provedor (Gemini, OpenAI ou Claude) esta configurado
+
+Execute `excelmind info` para ver o status da configuracao.
+
+### Qual o tamanho maximo de arquivo?
+
+O limite padrao e **200 MB**. Para arquivos maiores, o sistema usa lazy loading automaticamente.
+
+### Posso usar sem a IA?
+
+Sim! As funcionalidades de analise automatica, graficos e relatorios funcionam 100% offline, sem necessidade de API key.
+
+### Funciona no Windows?
+
+Sim! O projeto funciona em Windows, Linux e Mac.
+
+---
+
+## Estrutura do Projeto
+
+```
+excelmind-ai/
+├── src/excelmind_ai/    # Codigo fonte principal
+│   ├── main.py          # Interface Streamlit
+│   ├── cli.py           # Interface de linha de comando
+│   ├── core/            # Motor de analise e visualizacao
+│   ├── agents/          # Agentes de IA (LangGraph)
+│   ├── llm/             # Factory de provedores de LLM
+│   └── ui/              # Componentes da interface
+├── examples/            # Arquivos de exemplo
+├── tests/               # Testes automatizados
+├── docs/                # Documentacao adicional
+├── scripts/             # Scripts auxiliares
+└── requirements.txt     # Dependencias
+```
+
+---
+
+## Tecnologias Utilizadas
+
+- **[Polars](https://pola.rs/)** - Motor de dados ultrarapido
+- **[Streamlit](https://streamlit.io/)** - Interface web interativa
+- **[Plotly](https://plotly.com/)** - Graficos interativos
+- **[LangGraph](https://langchain-ai.github.io/langgraph/)** - Agentes de IA
+- **[Typer](https://typer.tiangolo.com/)** + **[Rich](https://rich.readthedocs.io/)** - CLI profissional
+
+---
+
+## Contribuindo
+
+Contribuicoes sao bem-vindas! Veja o arquivo `CONTRIBUTING.md` para detalhes.
+
+1. Fork o repositorio
+2. Crie sua branch: `git checkout -b feature/nova-funcionalidade`
+3. Commit suas mudancas: `git commit -m 'Adiciona nova funcionalidade'`
+4. Push: `git push origin feature/nova-funcionalidade`
+5. Abra um Pull Request
+
+---
+
 ## Licenca
 
 Este projeto esta sob a licenca MIT. Veja o arquivo [LICENSE](LICENSE) para detalhes.
+
+---
+
+## Suporte
+
+- Abra uma [Issue](../../issues) para reportar bugs ou sugerir melhorias
+- Consulte a [documentacao](docs/) para informacoes detalhadas
+
+---
+
+<p align="center">
+  <b>Transforme dados em insights com inteligencia.</b>
+</p>
