@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1F4E79;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4A90D9;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34D399;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background Circle -->
+  <circle cx="60" cy="60" r="55" fill="url(#grad1)"/>
+  
+  <!-- Excel-like Grid -->
+  <rect x="25" y="30" width="45" height="60" rx="3" fill="white" opacity="0.95"/>
+  
+  <!-- Grid Lines -->
+  <line x1="25" y1="45" x2="70" y2="45" stroke="#1F4E79" stroke-width="1"/>
+  <line x1="25" y1="60" x2="70" y2="60" stroke="#1F4E79" stroke-width="1"/>
+  <line x1="25" y1="75" x2="70" y2="75" stroke="#1F4E79" stroke-width="1"/>
+  <line x1="40" y1="30" x2="40" y2="90" stroke="#1F4E79" stroke-width="1"/>
+  <line x1="55" y1="30" x2="55" y2="90" stroke="#1F4E79" stroke-width="1"/>
+  
+  <!-- Cell Highlights -->
+  <rect x="26" y="46" width="13" height="13" fill="#10B981" opacity="0.8"/>
+  <rect x="41" y="61" width="13" height="13" fill="#4A90D9" opacity="0.8"/>
+  <rect x="56" y="31" width="13" height="13" fill="#F59E0B" opacity="0.8"/>
+  
+  <!-- AI Brain Symbol -->
+  <circle cx="82" cy="65" r="25" fill="url(#grad2)" opacity="0.9"/>
+  <path d="M75 65 Q75 55 82 55 Q89 55 89 65 Q89 75 82 75 Q75 75 75 65" 
+        fill="none" stroke="white" stroke-width="2.5"/>
+  <circle cx="78" cy="62" r="2" fill="white"/>
+  <circle cx="86" cy="62" r="2" fill="white"/>
+  <path d="M78 70 Q82 73 86 70" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Neural Connections -->
+  <circle cx="72" cy="50" r="3" fill="white" opacity="0.7"/>
+  <circle cx="92" cy="50" r="3" fill="white" opacity="0.7"/>
+  <circle cx="72" cy="80" r="3" fill="white" opacity="0.7"/>
+  <circle cx="92" cy="80" r="3" fill="white" opacity="0.7"/>
+  <line x1="72" y1="50" x2="78" y2="58" stroke="white" stroke-width="1.5" opacity="0.7"/>
+  <line x1="92" y1="50" x2="86" y2="58" stroke="white" stroke-width="1.5" opacity="0.7"/>
+  <line x1="72" y1="80" x2="78" y2="72" stroke="white" stroke-width="1.5" opacity="0.7"/>
+  <line x1="92" y1="80" x2="86" y2="72" stroke="white" stroke-width="1.5" opacity="0.7"/>
+</svg>
